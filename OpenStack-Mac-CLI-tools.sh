@@ -2,7 +2,7 @@
 #
 # Installs command line tools for openstack on Mac OS X (tested on 10.9)
 #
-# bash <(curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/OpenStack-Mac-CLI-tools.sh)
+# sudo curl https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/OpenStack-Mac-CLI-tools.sh | sh
 
 sudo easy_install pip
 
