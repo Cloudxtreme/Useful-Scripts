@@ -25,11 +25,21 @@ bash <(curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/O
 # Install docker on openstack
 bash <(curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/Ubuntu-Docker-Install.sh)
 
+
+
+# Build Base OS containers
+
 # Build CannyOS Ubuntu base containers (main)
 bash <(curl -s https://raw.githubusercontent.com/intlabs/dockerfile-cannyos-ubuntu-14_04-base/master/Build.sh)
 
 # Build CannyOS Ubuntu 12.04 LTS container
 bash <(curl -s https://raw.githubusercontent.com/intlabs/dockerfile-cannyos-ubuntu-12_04-base/master/Build.sh)
+
+# Build CannyOS Fedora container
+bash <(curl -s https://raw.githubusercontent.com/intlabs/dockerfile-cannyos-fedora-base/master/Build.sh)
+
+
+# Build CannyOS Ubuntu 14.04 lts based containers:
 
 # Build Dropbox intergration container
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-storage-dropbox/master/Build.sh)
@@ -37,8 +47,37 @@ bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-storage-dr
 # Build GNOME desktop vnc
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-desktop-gnome/master/Build.sh)
 
+# Build GateOne web terminal
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-desktop-gateone/master/Build.sh)
+
 # Build Symbiose desktop
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-ubuntu-desktop-symbiose/master/Build.sh)
 
 # Build Broadway application
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-application-broadway-base/master/Build.sh)
+
+# Build Broadway libreoffice
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-application-broadway-libreoffice/master/Build.sh)
+
+# Build GitLab
+
+
+# Build SkyDNS
+https://raw.githubusercontent.com/intlabs/cannyos-backend-skydns/master/Build.sh)
+
+# Build Openstack Client
+https://raw.githubusercontent.com/intlabs/cannyos-user-backend-openstack/master/Build.sh)
+
+# Build User fileserver 
+https://raw.githubusercontent.com/intlabs/cannyos-user-backend-storage/master/Build.sh)
+
+# Build OpenVPN Matched Pair
+
+
+# Build CannyOS Fedora based containers:
+
+# Build Broadway application
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-application-broadway-base-fedora/master/Build.sh)
+
+# Build FreeIPA backend
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-backend-freeipa/master/Build.sh)
