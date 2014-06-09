@@ -1,3 +1,9 @@
+Things to do:
+
+* make a container that mounts a volume from cinder - can openstack launch a user owned volume on an a project admin's instance? - I'm not modifying keystone!!!!!
+
+
+
 Amazon S3 Fuse:
 
 apt-get install -y build-essential libfuse-dev libcurl4-openssl-dev libxml2-dev mime-support automake
