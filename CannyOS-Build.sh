@@ -62,13 +62,13 @@ bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-applicatio
 # Build GitLab
 
 
-# Build SkyDNS
+# Build SkyDNS - WIP
 https://raw.githubusercontent.com/intlabs/cannyos-backend-skydns/master/Build.sh)
 
-# Build Openstack Client
+# Build Openstack Client - WIP
 https://raw.githubusercontent.com/intlabs/cannyos-user-backend-openstack/master/Build.sh)
 
-# Build User fileserver 
+# Build User fileserver - WIP 
 https://raw.githubusercontent.com/intlabs/cannyos-user-backend-storage/master/Build.sh)
 
 # Build OpenVPN Matched Pair
@@ -76,8 +76,8 @@ https://raw.githubusercontent.com/intlabs/cannyos-user-backend-storage/master/Bu
 
 # Build CannyOS Fedora based containers:
 
-# Build Broadway application
+# Build Broadway application - WIP
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-application-broadway-base-fedora/master/Build.sh)
 
-# Build FreeIPA backend
+# Build FreeIPA backend - WIP (Requires SkyDNS / CoreOS host)
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-backend-freeipa/master/Build.sh)
