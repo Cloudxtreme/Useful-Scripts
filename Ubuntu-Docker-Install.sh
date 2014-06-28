@@ -7,4 +7,12 @@
 sudo apt-get -y update && \
 sudo apt-get -y install docker.io && \
 sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker && \
+sudo groupadd docker && \
+sudo gpasswd -a ${USER} docker && \
 sudo restart docker.io
+
+
+
+#Subuser
+
+#P

@@ -20,15 +20,20 @@
 #
 
 # Please note:
+#
 # * I have not implemented a private repo or any sort of dependancy checking as yet.
+#
 # * CannyOS makes estensive use of FUSE, which requires elevated permissions for the docker
 #   containers, and why the base containers need a custom two step build process (as we
 #   need to do things that cannot be achived using 'docker build') so check out the last
 #   lines of the relivant Build Script to see the launch requirments for a container.
-# * It is imperative to note that CannyOS are super particular about their launch peramiters!
+#
+# * It is imperative to note that CannyOS containers are super particular about their launch peramiters!
 #    - security and reliability come through doing things right
 #	 - though there is NO security at present, (waiting on FreeIPA)
 #		- most containers drop you straight into root ffs!
+#		- before long manual launching of containers will be less than pleasant if you want to
+#		  do anything with it other than look at a web page - just like the "internet" then :)
 
 # Fix hosts file on ubuntu openstack
 bash <(curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/OpenStack-Ubuntu-Hostname-Fix.sh)
@@ -46,33 +51,176 @@ bash <(curl -s https://raw.githubusercontent.com/intlabs/dockerfile-cannyos-ubun
 # Build CannyOS Ubuntu 12.04 LTS container (for older applications)
 bash <(curl -s https://raw.githubusercontent.com/intlabs/dockerfile-cannyos-ubuntu-12_04-base/master/Build.sh)
 
-# Build CannyOS Fedora container ( initially to provide authorisation backend )
+# Build CannyOS Fedora container
 bash <(curl -s https://raw.githubusercontent.com/intlabs/dockerfile-cannyos-fedora-base/master/Build.sh)
+
+# Build CannyOS ArchLinux container
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-base-archlinux/master/Build.sh)
 
 # Build CannyOS openSUSE container 
 # This is gonna have to be much more in depth as the only way to produce a trusted image is via KIWI
 # http://flavio.castelli.name/2014/05/06/building-docker-containers-with-kiwi/
 # This should be performed inside vagrant on ubuntu 14.04 to provide a single host build.
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-base-opensuse/master/Build.sh)
+
+
+# Build CannyOS Ubuntu container with gtk3
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-base-ubuntu-gtk3/master/Build.sh)
+
+# Build CannyOS Fedora container with gtk3
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-base-fedora-gtk3/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-base-archlinux-gtk3/master/Build.sh)
+
+# Build CannyOS openSUSE container with gtk3
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-base-opensuse-gtk3/master/Build.sh)
+
+
+
+
+
+# Build CannyOS Ubuntu container with gtk3 & gedit
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-ubuntu-gtk3-gedit/master/Build.sh)
+
+# Build CannyOS Ubuntu container with gtk3 & libreoffice
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-ubuntu-gtk3-libreoffice/master/Build.sh)
+
+# Build CannyOS Ubuntu container with gtk3 & gramps
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-ubuntu-gtk3-gramps/master/Build.sh)
+
+# Build CannyOS Ubuntu container with gtk3 & epiphany
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-ubuntu-gtk3-epiphany/master/Build.sh)
+
+
+
+
+
+
+# Build CannyOS Fedora container with gtk3 & gedit
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-fedora-gtk3-gedit/master/Build.sh)
+
+# Build CannyOS Fedora container with gtk3 & libreoffice
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-fedora-gtk3-libreoffice/master/Build.sh)
+
+# Build CannyOS Fedora container with gtk3 & epiphany
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-fedora-gtk3-epiphany/master/Build.sh)
+
+# Build CannyOS Fedora container with gtk3 & gramps
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-fedora-gtk3-gramps/master/Build.sh)
+
+# Build CannyOS Fedora container with gtk3 & geary
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-fedora-gtk3-geary/master/Build.sh)
+
+
+
+
+
+# Build CannyOS openSUSE container with gtk3 & gedit
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-opensuse-gtk3-gedit/master/Build.sh)
+
+# Build CannyOS openSUSE container with gtk3 & libreoffice
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-opensuse-gtk3-libreoffice/master/Build.sh)
+
+# Build CannyOS openSUSE container with gtk3 & gramps
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-opensuse-gtk3-gramps/master/Build.sh)
+
+# Build CannyOS openSUSE container with gtk3 & epiphany
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-opensuse-gtk3-epiphany/master/Build.sh)
+
+
+
+
+
+# Build CannyOS ArchLinux container with gtk3 & gedit
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-gedit/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3 & libreoffice
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-libreoffice/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3 & gramps
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-gramps/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3 & epiphany
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-epiphany/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3 & gimp
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-gimp/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3 & inkscape
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-inkscape/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3 & midori
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-midori/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3 & california
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-california/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3 & nautilus
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-nautilus/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3 & gnumeric
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-gnumeric/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3 & evince
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-evince/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3 & baobab
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-baobab/master/Build.sh)
+
+# Build CannyOS ArchLinux container with gtk3 & gpg-crypter
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-gpgcrypter/master/Build.sh)
+
+
+
+
+
+
 
 # Build CannyOS Ubuntu 14.04 lts based containers:
 
 # Build Dropbox intergration container
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-storage-dropbox/master/Build.sh)
 
-# Build GNOME desktop vnc - provides gnome classic via vnc.
+
+
+
+# Build GNOME desktop VNC (via noVNC) - provides gnome classic via vnc.
+# -p 800:80
 #	This forms the 'lowest' level of remote desktop
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-desktop-gnome/master/Build.sh)
 
+
+
+
 # Build GateOne web terminal - provides the gate one terminal web interface
+# -p 443:443 -p 2222:22
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-desktop-gateone/master/Build.sh)
 
+
+
+# Build the CannyOS user terminal - provides the default user facing terminal
+# -p 222:22
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-backend-chroot/master/Build.sh)
+
+
+
 # Build Symbiose desktop - provides the Symbiose web desktop
+# -p 802:80
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-ubuntu-desktop-symbiose/master/Build.sh)
 
+
+
+
 # Build Broadway application - provides a base container to build all further broadway apps
+#  -p 803:80
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-application-broadway-base/master/Build.sh)
 
+
+
+
 # Build Broadway application - libreoffice
+# -port 804:80
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-application-broadway-libreoffice/master/Build.sh)
 
 # Build GitLab
@@ -104,7 +252,12 @@ https://raw.githubusercontent.com/intlabs/cannyos-user-backend-storage/master/Bu
 
 # Build CannyOS Fedora based containers:
 
-# Build Broadway application - WIP
+# Build Broadway application
+# -p 805:80 (needs done)
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-application-broadway-base-fedora/master/Build.sh)
+
+# Build Broadway application - libreoffice
+# -p 806:80  (needs done)
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-application-broadway-base-fedora/master/Build.sh)
 
 # Build FreeIPA backend - WIP (Requires SkyDNS / CoreOS host)
