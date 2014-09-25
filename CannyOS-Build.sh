@@ -38,6 +38,10 @@
 # Fix hosts file on ubuntu openstack
 bash <(curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/OpenStack-Ubuntu-Hostname-Fix.sh)
 
+# Install Devstack on openstack
+bash <(curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/Devstack-installer.sh)
+
+
 # Install docker on openstack
 bash <(curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/Ubuntu-Docker-Install.sh)
 
@@ -171,6 +175,9 @@ bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-arc
 # Build CannyOS ArchLinux container with gtk3 & gpg-crypter
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-gtk3-gpgcrypter/master/Build.sh)
 
+# Build CannyOS ArchLinux container with nginx
+bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-application-archlinux-nginx/master/Build.sh)
+
 
 
 
@@ -190,6 +197,9 @@ bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-storage-dr
 #	This forms the 'lowest' level of remote desktop
 bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-desktop-gnome/master/Build.sh)
 
+
+# Build OpenGovernment desktop.
+bash <(curl -s https://raw.githubusercontent.com/cannycomputing/cannyos-application-ubuntu-opengovernment/master/Build.sh)
 
 
 
