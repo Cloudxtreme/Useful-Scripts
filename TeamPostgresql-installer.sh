@@ -19,9 +19,8 @@
 # limitations under the License.
 #
 
-apt-get install -y default-jre && \
-cd ~ && \
+apt-get install -y openjdk-7-jre-headless && \
+cd / && \
 wget http://cdn.webworks.dk/download/teampostgresql_multiplatform.zip && \
 unzip teampostgresql_multiplatform.zip && \
-cd teampostgresql && \
-java -cp webapp/WEB-INF/lib/log4j-1.2.17.jar-1.0.jar:webapp/WEB-INF/classes:webapp/WEB-INF/lib/* dbexplorer.TeamPostgreSQL 80
+cd /teampostgresql

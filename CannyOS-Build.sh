@@ -50,6 +50,9 @@ bash <(curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/U
 # Install TeamPostgresql
 bash <(curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/TeamPostgresql-installer.sh)
 
+# Build TeamPostgresql Container
+bash <(curl -s https://raw.githubusercontent.com/intlabs/TeamPostgresql/master/Build.sh)
+
 
 
 
@@ -208,6 +211,9 @@ bash <(curl -s https://raw.githubusercontent.com/intlabs/cannyos-user-desktop-gn
 
 # Build OpenGovernment desktop.
 bash <(curl -s https://raw.githubusercontent.com/cannycomputing/cannyos-application-ubuntu-opengovernment/master/Build.sh)
+
+# Build OpenGovernment postgres server.
+bash <(curl -s https://raw.githubusercontent.com/cannycomputing/connectedgovernment-postgres/master/Build.sh)
 
 
 
