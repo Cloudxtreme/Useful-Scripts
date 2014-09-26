@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# CannyOS docker container build script
+# CannyOS docker container build scripts
 #
 # https://github.com/intlabs/cannyos-ubuntu-desktop-symbiose
 #

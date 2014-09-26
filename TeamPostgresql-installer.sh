@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# teampostgresql installation script
+# teampostgresql installation script for ubuntu 14.04lts
 #
 # https://github.com/intlabs/
 #
