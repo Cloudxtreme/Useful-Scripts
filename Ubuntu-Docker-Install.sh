@@ -13,9 +13,6 @@
 #sudo gpasswd -a ${USER} docker && \
 #sudo restart docker.io
 
-
-sudo apt-get -y update && \
-sudo apt-get -y upgrade && \
 curl -sSL https://get.docker.io/ubuntu/ | sudo sh
 
 

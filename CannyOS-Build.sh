@@ -47,6 +47,14 @@ bash <(curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/U
 
 
 
+# Install TeamPostgresql
+bash <(curl -s https://raw.githubusercontent.com/intlabs/Useful-Scripts/master/TeamPostgresql-installer.sh)
+
+
+
+
+
+
 # Build Base OS containers
 
 # Build CannyOS Ubuntu base containers (main)
